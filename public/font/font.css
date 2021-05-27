@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Rhyme Player";
+  font-weight: 900;
+  src: url("./Roboto-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rhyme Player";
+  font-weight: 900;
+  font-style: italic;
+  src: url("./Roboto-BlackItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rhyme Player";
+  font-weight: 700;
+  src: url("./Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rhyme Player";
+  font-weight: 700;
+  font-style: italic;
+  src: url("./Roboto-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rhyme Player";
+  font-weight: 500;
+  src: url("./Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rhyme Player";
+  font-weight: 500;
+  font-style: italic;
+  src: url("./Roboto-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rhyme Player";
+  font-weight: 400;
+  src: url("./Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rhyme Player";
+  font-weight: 400;
+  font-style: italic;
+  src: url("./Roboto-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rhyme Player";
+  font-weight: 300;
+  src: url("./Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rhyme Player";
+  font-weight: 300;
+  font-style: italic;
+  src: url("./Roboto-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rhyme Player";
+  font-weight: 100;
+  src: url("./Roboto-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rhyme Player";
+  font-weight: 100;
+  font-style: italic;
+  src: url("./Roboto-ThinItalic.ttf") format("truetype");
+}
