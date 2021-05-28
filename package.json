@@ -2,6 +2,12 @@
   "name": "rhyme-player",
   "productName": "Rhyme Player",
   "version": "1.0.0",
+  "description": "The #1 Open source cross-platform muisc player and streamer",
+  "homepage": "https://rhyme-player.netlify.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abdallah-Moh/Rhyme-Player.git"
+  },
   "private": false,
   "license": "MIT",
   "author": {
@@ -15,7 +21,47 @@
     "start": "echo 'Electron is Launching' && electron .",
     "validate": "svelte-check",
     "format-check": "prettier --check \"{,!(node_modules|public)/**/}*.{js,svelte,ts}\"",
-    "format": "echo 'Started Formatting' && prettier --write \"{,!(node_modules|public)/**/}*.{js,svelte}\" && echo 'Ended Formatting'"
+    "format": "echo 'Started Formatting' && prettier --write \"{,!(node_modules|public)/**/}*.{js,svelte,ts}\" && echo 'Ended Formatting'"
+  },
+  "build": {
+    "appId": "app.netlify.rhyme-player",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "abdallah-moh",
+        "repo": "Rhyme-Player"
+      }
+    ],
+    "dmg": {
+      "contents": [
+        {
+          "x": 120,
+          "y": 220
+        },
+        {
+          "x": 400,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "mac": {
+      "icon": "icons/icon.icns",
+      "target": "pkg"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Utility",
+      "maintainer": "Abdallah <abdullah_mam1@icloud.com>",
+      "icon": "icons"
+    },
+    "win": {
+      "icon": "icons/icon.ico"
+    }
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",

@@ -2,10 +2,10 @@
   let settings = {};
   const storage = require("electron-json-storage");
 
-  storage.has("settings", (error, hasKey) => {
+  storage.has("settings", (error: string, hasKey: boolean) => {
     if (error) throw error;
     if (hasKey) {
-      storage.get("settings", (error, data) => {
+      storage.get("settings", (error: string, data: object) => {
         if (error) throw error;
         settings = data;
       });
