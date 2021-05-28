@@ -14,7 +14,7 @@
     "dev": "npm run format && echo 'Started Dev Enviroment' && rollup -c -w",
     "start": "echo 'Electron is Launching' && electron .",
     "validate": "svelte-check",
-    "format-check": "prettier --check \"{,!(node_modules|public)/**/}*.{js,svelte}\"",
+    "format-check": "prettier --check \"{,!(node_modules|public)/**/}*.{js,svelte,ts}\"",
     "format": "echo 'Started Formatting' && prettier --write \"{,!(node_modules|public)/**/}*.{js,svelte}\" && echo 'Ended Formatting'"
   },
   "devDependencies": {

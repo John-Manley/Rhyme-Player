@@ -27,7 +27,7 @@
 
   .song-info {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
   }
   h2 {

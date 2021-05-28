@@ -17,15 +17,6 @@
     }
   });
   let songsInfo: object[];
-  storage.has("songs-info", (error: string, hasKey: boolean) => {
-    if (error) throw error;
-    if (hasKey) {
-      storage.get("songs-info", (error: string, data: object) => {
-        if (error) throw error;
-        songsInfo = data["songs-info"];
-      });
-    }
-  });
 
   var walkSync = function (dir: string, filelist?: string[]) {
     let files = fs.readdirSync(dir);
@@ -77,13 +68,12 @@
     var files = walkSync(filePath);
     var names = await parseFiles(files);
     songsInfo = names;
-    $player = new Player(songsInfo);
     console.log(names);
   }
 
-  storage.get("folder-path", (error: string, data: string) => {
+  storage.get("settings", (error: string, data: string) => {
     if (error) throw error;
-    scanDir(data);
+    scanDir(data["folder"]);
   });
 </script>
 

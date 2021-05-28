@@ -26,10 +26,14 @@ function createWindow() {
 
   win.loadFile(path.join(__dirname, "public/index.html"));
 
-  storage.has("folder-path", (error, haskey) => {
+  storage.has("settings", (error, haskey) => {
     if (error) throw error;
     if (!haskey) {
-      storage.set("folder-path", { folder: app.getPath("music") }, (error) => {
+      let settings = {
+        folder: app.getPath("music"),
+        theme: "light",
+      };
+      storage.set("settings", settings, (error) => {
         if (error) throw error;
       });
     }

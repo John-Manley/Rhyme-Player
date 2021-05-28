@@ -30,6 +30,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    cursor: pointer;
   }
   img {
     width: 120px;
