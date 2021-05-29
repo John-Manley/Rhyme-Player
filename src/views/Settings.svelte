@@ -35,7 +35,11 @@
 <main>
   <h1>General</h1>
   <ul class="general">
-    <li>Music Folder <button on:click={showFolderDialog}>{settings["folder"]}</button></li>
+    <li>
+      Music Folder <button on:click={showFolderDialog}
+        >{settings["folder"]}</button
+      >
+    </li>
   </ul>
 </main>
 
