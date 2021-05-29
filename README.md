@@ -1,4 +1,8 @@
-<h1 align="center"> Rhyme Player </h1>
+<h1 align="center"> 
+  <img src="https://matrix-client.matrix.org/_matrix/media/r0/thumbnail/matrix.org/WZpvhceoSwbhMWvnUFPhgBeT?width=64&height=64&method=crop"/> 
+  <br/>
+  Rhyme Player
+</h1>
 <h3 align="center">
 Discord: <img src ="https://img.shields.io/discord/848185747319816212">
 Matrix: <img src ="https://img.shields.io/matrix/rhymes-player:matrix.org">
