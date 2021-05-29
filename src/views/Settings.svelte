@@ -11,12 +11,31 @@
       });
     }
   });
+
+  function showFolderDialog() {
+    const { dialog } = require("electron").remote;
+    const window = require("electron").remote.BrowserWindow;
+    dialog
+      .showOpenDialog(window.getFocusedWindow(), {
+        properties: ["openDirectory"],
+      })
+      .then((result) => {
+        const filePath = result.filePaths[0];
+        if (filePath) {
+          console.dir(filePath);
+          settings["folder"] = filePath;
+          storage.set("settings", settings, function (error) {
+            if (error) throw error;
+          });
+        }
+      });
+  }
 </script>
 
 <main>
   <h1>General</h1>
   <ul class="general">
-    <li>Music Folder <button>{settings["folder"]}</button></li>
+    <li>Music Folder <button on:click={showFolderDialog}>{settings["folder"]}</button></li>
   </ul>
 </main>
 
@@ -46,6 +65,10 @@
       border: none;
       border-radius: 7px;
       cursor: pointer;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 100%;
     }
   }
 </style>
