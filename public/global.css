@@ -5,6 +5,8 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  font-family: "Rhyme Player";
+  color: #5c5c5c;
 }
 
 * {
@@ -15,11 +17,6 @@ body {
   outline: none;
   box-sizing: border-box;
   overflow-x: hidden;
-}
-
-body {
-  font-family: "Rhyme Player";
-  color: #5c5c5c;
 }
 
 ::-webkit-scrollbar-thumb:hover {
