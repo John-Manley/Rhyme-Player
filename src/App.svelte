@@ -6,6 +6,7 @@
   import Explore from "./views/Explore.svelte";
   import Settings from "./views/Settings.svelte";
   import SongView from "./views/SongView.svelte";
+  import BottomBar from "./components/BottomBar.svelte";
   const routes = {
     "/": MyMusic,
     "/explore": Explore,
@@ -18,6 +19,7 @@
   <SideBar />
   <div class="left-bar">
     <Router {routes} />
+    <BottomBar />
   </div>
 </main>
 
