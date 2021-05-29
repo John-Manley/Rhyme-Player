@@ -1,6 +1,6 @@
 <script lang="ts">
   import SongItem from "../components/SongItem.svelte";
-  import { player } from "../store";
+  import { player, songsArray } from "../store";
 
   const storage = require("electron-json-storage");
   const mm = require("music-metadata");
@@ -25,15 +25,7 @@
       if (fs.statSync(path.join(dir, file)).isDirectory()) {
         filelist = walkSync(path.join(dir, file), filelist);
       } else {
-        if (
-          file.endsWith(".mp3") ||
-          file.endsWith(".m4a") ||
-          file.endsWith(".webm") ||
-          file.endsWith(".wav") ||
-          file.endsWith(".aac") ||
-          file.endsWith(".ogg") ||
-          file.endsWith(".opus")
-        ) {
+        if (file.endsWith(".mp3") || file.endsWith(".m4a") || file.endsWith(".webm") || file.endsWith(".wav") || file.endsWith(".aac") || file.endsWith(".ogg") || file.endsWith(".opus")) {
           filelist.push(path.join(dir, file));
         }
       }
@@ -51,17 +43,18 @@
       data["title"] = title ? title : audioFile.split(path.sep).slice(-1)[0];
       data["artist"] = artist ? artist : "Unknown";
       data["file"] = audioFile;
-      data["imgSrc"] = metadata.common.picture
-        ? `data:${
-            metadata.common.picture[0].format
-          };base64,${metadata.common.picture[0].data.toString("base64")}`
-        : null;
+      data["imgSrc"] = metadata.common.picture ? `data:${metadata.common.picture[0].format};base64,${metadata.common.picture[0].data.toString("base64")}` : null;
       songsInfo.push(data);
       songsInfo = songsInfo;
+      songsArray.set(songsInfo);
     }
   }
 
   async function scanDir(filePath: string) {
+    if ($songsArray) {
+      songsInfo = $songsArray;
+      return;
+    }
     if (!filePath || filePath == "undefined") return;
     var files = walkSync(filePath);
     await parseFiles(files);
@@ -85,12 +78,7 @@
   {#if songsInfo}
     <div class="songs">
       {#each songsInfo as song}
-        <SongItem
-          artist={song["artist"]}
-          title={song["title"]}
-          imgSrc={song["imgSrc"]}
-          file={song["file"]}
-        />
+        <SongItem artist={song["artist"]} title={song["title"]} imgSrc={song["imgSrc"]} file={song["file"]} />
       {/each}
     </div>
   {/if}
