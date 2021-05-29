@@ -44,7 +44,7 @@ export default {
   },
   plugins: [
     svelte({
-      preprocess: sveltePreprocess({ sourceMap: !production }),
+      preprocess: sveltePreprocess({ sourceMap: true }),
       compilerOptions: {
         // enable run-time checks when not in production
         dev: !production,
@@ -65,7 +65,7 @@ export default {
     }),
     commonjs(),
     typescript({
-      sourceMap: !production,
+      sourceMap: true,
       inlineSources: !production,
     }),
 
