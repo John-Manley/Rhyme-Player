@@ -10,7 +10,7 @@
 <img  width="700px" align="center" src="https://user-images.githubusercontent.com/77546233/119336809-60c78b00-bc8e-11eb-8051-95a2412f5e68.png"/>
 </h3>
 
-> If you have questions Open a [Discussion](https://github.com/Abdallah-Moh/Rhyme-Player/discussions) or Join our public matrix channel [Rhyme Player](https://matrix.to/#/!RAVspDkfhMmxyxEAeE:matrix.org?via=matrix.org)
+> If you have questions Open a [Discussion](https://github.com/Abdallah-Moh/Rhyme-Player/discussions) or Join our public matrix channel [Rhyme Player Matrix](https://matrix.to/#/!RAVspDkfhMmxyxEAeE:matrix.org?via=matrix.org) or our public discord channel [Rhyme Player Discord](https://discord.gg/GuMtT964)
 
 # Features
 
