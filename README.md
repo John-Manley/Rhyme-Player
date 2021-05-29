@@ -1,16 +1,19 @@
-<h1 align="center"> Rhyme Player </h1>
+<h1 align="center"> 
+  <img src="https://matrix-client.matrix.org/_matrix/media/r0/thumbnail/matrix.org/WZpvhceoSwbhMWvnUFPhgBeT?width=64&height=64&method=crop"/> 
+  <br/>
+  Rhyme Player
+</h1>
 <h3 align="center">
-<img src ="https://api.netlify.com/api/v1/badges/47876151-40e3-4734-ba2a-ab96af6526be/deploy-status">
+Discord: <img src ="https://img.shields.io/discord/848185747319816212">
+Matrix: <img src ="https://img.shields.io/matrix/rhymes-player:matrix.org">
 <img src ="https://img.shields.io/github/issues-raw/Abdallah-Moh/Rhyme-Player">
 <img src ="https://img.shields.io/github/issues-pr/Abdallah-Moh/Rhyme-Player">
 <img src ="https://img.shields.io/github/downloads/Abdallah-Moh/Rhyme-Player/total">
 <img src ="https://img.shields.io/github/stars/Abdallah-Moh/Rhyme-Player">
-
-<p>Rhyme Player is an open source cross platform beautiful music player that support light and dark theme</P>
-<img  width="700px" align="center" src="https://user-images.githubusercontent.com/77546233/119336809-60c78b00-bc8e-11eb-8051-95a2412f5e68.png"/>
 </h3>
+<p align="center">Rhyme Player is an open source cross platform beautiful music player that support light and dark theme <br/><br/> <img  width="700px" align="center" src="https://user-images.githubusercontent.com/77546233/119336809-60c78b00-bc8e-11eb-8051-95a2412f5e68.png"/></P>
 
-> If you have questions Open a [Discussion](https://github.com/Abdallah-Moh/Rhyme-Player/discussions) or Join our public matrix channel [Rhyme Player](https://matrix.to/#/!RAVspDkfhMmxyxEAeE:matrix.org?via=matrix.org)
+> If you have questions Open a [Discussion](https://github.com/Abdallah-Moh/Rhyme-Player/discussions) or Join our public matrix channel [Rhyme Player Matrix](https://matrix.to/#/!RAVspDkfhMmxyxEAeE:matrix.org?via=matrix.org) or our public discord channel [Rhyme Player Discord](https://discord.gg/GuMtT964)
 
 # Features
 
@@ -94,6 +97,6 @@ See also [gitmoji](https://gitmoji.carloscuesta.me/).
 
 # Pull Requests
 
-Please put in mind that even if you have the write access to merge a PR wait for reviews from me or other contriburs
+Please put in mind that even if you have the write access to merge a PR wait for reviews from me or other contributors
 if the feature that the PR implements is still not finished please convert the PR to a draft to let reviewers know that it is incomplete
 before you make your PR ready for reviews you must make sure that it passed all the checks
