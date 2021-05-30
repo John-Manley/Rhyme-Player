@@ -6,18 +6,21 @@
   import Explore from "./views/Explore.svelte";
   import Settings from "./views/Settings.svelte";
   import SongView from "./views/SongView.svelte";
+  import BottomBar from "./components/BottomBar.svelte";
   const routes = {
     "/": MyMusic,
     "/explore": Explore,
     "/settings": Settings,
     "/song-view": SongView,
   };
+  console.clear();
 </script>
 
 <main>
   <SideBar />
   <div class="left-bar">
     <Router {routes} />
+    <BottomBar />
   </div>
 </main>
 
@@ -30,5 +33,8 @@
   }
   .left-bar {
     width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 </style>

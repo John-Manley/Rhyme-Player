@@ -15,6 +15,8 @@
 <style>
   main {
     padding: 20px;
+    height: 100%;
+    width: 100%;
   }
   img {
     min-width: 200px;
