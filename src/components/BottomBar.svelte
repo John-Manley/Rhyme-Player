@@ -40,6 +40,7 @@
     display: flex;
     img {
       min-width: 70px;
+      object-fit: cover;
       min-height: 70px;
       width: 70px;
       height: 70px;

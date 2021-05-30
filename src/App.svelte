@@ -13,7 +13,6 @@
     "/settings": Settings,
     "/song-view": SongView,
   };
-  console.clear();
 </script>
 
 <main>
