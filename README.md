@@ -36,7 +36,8 @@ Matrix: <img src ="https://img.shields.io/matrix/rhymes-player:matrix.org">
 
 # Compile from source
 
-- Clone Repo `https://github.com/Abdallah-Moh/Rhyme-Player.git`
+- Clone Repo `https://github.com/RhymePlayer/Rhyme-Player.git`
+- `cd Rhyme-Player`
 - Install Dependencies `npm i` or `yarn`
 - Run in Dev Mode `npm run dev` or `yarn dev`
 - Build app `npm run build` or `yarn build`
